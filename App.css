@@ -1,0 +1,118 @@
+/* App.css */
+/* Styling for the main App component */
+
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Main App container */
+.App {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+  padding: 20px;
+}
+
+/* Application header */
+.App-header {
+  text-align: center;
+  padding: 40px 20px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.App-header h1 {
+  font-size: 3em;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+
+.App-header p {
+  font-size: 1.3em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  font-weight: 300;
+}
+
+/* Application footer */
+.App-footer {
+  max-width: 800px;
+  margin: 40px auto 20px;
+  padding: 30px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+/* Instructions section */
+.instructions {
+  color: #4b5563;
+}
+
+.instructions h3 {
+  color: #667eea;
+  font-size: 1.6em;
+  margin-bottom: 20px;
+  border-bottom: 3px solid #667eea;
+  padding-bottom: 10px;
+}
+
+.instructions ul {
+  list-style: none;
+  padding: 0;
+}
+
+.instructions li {
+  padding: 12px 0;
+  padding-left: 30px;
+  position: relative;
+  font-size: 1.1em;
+  line-height: 1.6;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.instructions li:last-child {
+  border-bottom: none;
+}
+
+/* Add bullet point icon */
+.instructions li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #10b981;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .App {
+    padding: 10px;
+  }
+
+  .App-header h1 {
+    font-size: 2em;
+  }
+
+  .App-header p {
+    font-size: 1em;
+  }
+
+  .App-footer {
+    padding: 20px;
+    margin: 20px 10px;
+  }
+
+  .instructions h3 {
+    font-size: 1.3em;
+  }
+
+  .instructions li {
+    font-size: 0.95em;
+    padding-left: 25px;
+  }
+}
